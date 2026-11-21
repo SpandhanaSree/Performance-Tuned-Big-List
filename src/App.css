@@ -1,0 +1,109 @@
+
+.app {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #263238;
+}
+
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.employee-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.employee-card h3 {
+  color: #2563eb;
+}
+
+.employee-card p {
+  color: #555;
+}
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.controls input {
+  padding: 12px;
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.controls button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.app.dark {
+  background: #171923;
+  color: white;
+}
+
+.app.dark h1 {
+  color: white;
+}
+
+.app.dark .employee-card {
+  background: #2d3748;
+  color: white;
+}
+
+.app.dark .employee-card p {
+  color: #ddd;
+}
+
+
+.stats-section {
+  margin: 30px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.stats-card {
+  background: #dbeafe;
+  color: #1e293b;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.stats-card h3 {
+  color: #1d4ed8;
+}
+
+.app.dark .stats-card {
+  background: #374151;
+  color: white;
+}
+
+.app.dark .stats-card h3 {
+  color: #93c5fd;
+}
